@@ -1,0 +1,6 @@
+2015-06-14 16:27:49 INFO  PnBreadMakerHelper:48 - Goods that corresponding weight adjustment using manual filter: 89 items
+2015-06-14 16:27:49 INFO  PnBreadMakerHelper:50 - Goods that corresponding weight adjustment using web page filter: 89 items
+2015-06-14 16:28:11 INFO  PnBreadMakerHelper:29 - Goods that corresponding brand using manual filter: 6 items
+2015-06-14 16:28:11 INFO  PnBreadMakerHelper:31 - Goods that corresponding brand using web page filter: 6 items
+2015-06-14 16:31:32 INFO  PnWashersHelper:28 - Goods that corresponding prices using manual filter: 93 items
+2015-06-14 16:31:32 INFO  PnWashersHelper:30 - Goods that corresponding prices adjustment using web page filter: 93 items
