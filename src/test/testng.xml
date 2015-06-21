@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="MailSuite">
-    <test name="mails">
+<suite name="GMailSuite">
+    <test name="gmail">
         <classes>
-            <class name="tests.SortTest"/>
-            <class name="tests.ComparativeTest"/>
-            <class name="tests.ConcurrenceTest"/>
-            <class name="tests.FilterTest"/>
+             <class name="tests.TestsForGMail"/>
         </classes>
     </test>
 </suite>
