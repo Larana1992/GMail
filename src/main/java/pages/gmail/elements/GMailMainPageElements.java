@@ -1,14 +1,21 @@
 package pages.gmail.elements;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
+
 import pages.base.CorePage;
 import ru.yandex.qatools.htmlelements.element.Button;
+import ru.yandex.qatools.htmlelements.element.CheckBox;
 import ru.yandex.qatools.htmlelements.element.Link;
 import static org.openqa.selenium.By.xpath;
 
 public class GMailMainPageElements extends CorePage {
 
+	public static final String DELETE_BUTTON = "(//div[@role='button'])[10]";
+	public static final String SELECT_ALL_LETTERS_CHECKBOX = "(//div[@role='presentation'])[2]";
+	public static final String ALL_LETTERS_LIST = "(//tbody)[6]/tr";
 	public static final String CREATE_NEW_LETTER_BUTTON = "(//div[@role='button'])[6]";
 	public static final String POPUP_MENU_BUTTON = "(//a[@aria-haspopup='true'])[3]";
 	public static final String EXIT_BUTTON = "//div[2]/div[3]/div[2]/a";
@@ -20,6 +27,15 @@ public class GMailMainPageElements extends CorePage {
 	public static final By LETTER_SENT_MESSAGE_BUTTON = xpath("//span[@id='link_vsm']");
 	public static final By PROGRESS_BAR = xpath("//div[@role='progressbar']");
 	public static final String SPAM_CONFIRM_BUTTON = "//button/following-sibling::button";
+
+	@FindBy(xpath = DELETE_BUTTON)
+	private static Button btnDeleteAllLetters;
+	
+	@FindBy(xpath = SELECT_ALL_LETTERS_CHECKBOX)
+	private static CheckBox chbSelectAllLetter;
+
+	@FindBy(xpath = ALL_LETTERS_LIST)
+	private static List<Button> lstBtnAllLetters;
 
 	@FindBy(xpath = SPAM_CONFIRM_BUTTON)
 	private static Button btnSpanConfirm;
@@ -47,6 +63,14 @@ public class GMailMainPageElements extends CorePage {
 
 	@FindBy(xpath = SPAM_FOLDER_LINK)
 	private static Link lnkSpamFolder;
+
+	public static CheckBox getChbSelectAllLetter() {
+		return chbSelectAllLetter;
+	}
+
+	public static List<Button> getLstBtnAllLetters() {
+		return lstBtnAllLetters;
+	}
 
 	public static Button getBtnPopupMenu() {
 		return btnPopupMenu;

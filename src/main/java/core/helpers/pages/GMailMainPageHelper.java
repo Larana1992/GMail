@@ -15,7 +15,8 @@ import pages.gmail.elements.GMailMainPageElements;
 
 public class GMailMainPageHelper extends CorePage {
 	final private String spanBText = "//span/b[text()='";
-	private static GMailLetterHelper letterComponent = MyPages.getGMailLetterHelper();
+	private static GMailLetterHelper letterComponent = MyPages
+			.getGMailLetterHelper();
 
 	public void createAndFillNewLetter(int userNumber) {
 		waitForPageLoad(getDriver());
@@ -35,6 +36,13 @@ public class GMailMainPageHelper extends CorePage {
 
 	public void goToThemes() {
 		getBtnThemes().click();
+	}
+
+	public void deleteAllLetters() {
+		if(getLstBtnAllLetters().size()>0)
+		{
+			getChbSelectAllLetter().select();
+		}
 	}
 
 	public void logOut() {

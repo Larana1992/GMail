@@ -5,7 +5,9 @@
 	<groupId>com.epam.at.viktoriia_sova.gmail</groupId>
 	<artifactId>Gmail</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -15,6 +17,7 @@
 					<configuration>
 						<source>1.7</source>
 						<target>1.7</target>
+						<encoding>${project.build.sourceEncoding}</encoding>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -22,6 +25,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.18.1</version>
 					<configuration>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
 						<suiteXmlFiles>
 							<suiteXmlFile>src/test/testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
@@ -53,7 +57,7 @@
 			<artifactId>htmlelements-java</artifactId>
 			<version>1.13</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>

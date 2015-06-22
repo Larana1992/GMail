@@ -23,9 +23,9 @@ public class GMailAddFileToNotWebWindow {
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
-			delay(1000);
+			delay(2000);
 			action();
-			delay(5000);
+			delay(10000);
 		} catch (AWTException e) {
 			e.printStackTrace();
 		}

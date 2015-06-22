@@ -16,7 +16,7 @@ public class GMailThemesPage extends CorePage implements ThemesPage {
 		Random randomTheme = new Random();
 		waitForPageLoad(getDriver());
 		waitForElementLocated(NAVIGATE_MENU, getDriver());
-		getListThemes().get(randomTheme.nextInt(getListThemes().size() - 1))
+		getListThemes().get(randomTheme.nextInt(getListThemes().size()))
 				.click();
 		assertTrue(isElementPresent(THEME_CHENGED_MESSAGE, getDriver()),
 				"Verify that new theme has been chose");

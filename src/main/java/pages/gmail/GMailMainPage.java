@@ -31,7 +31,7 @@ public class GMailMainPage extends CorePage implements MainPage {
 		waitForElementLocated(LETTER_SENT_MESSAGE_BUTTON, getDriver());
 		return getGMailMainPage();
 	}
-
+	
 	@Override
 	public GMailLoginPage logOut() {
 		waitForPageLoad(getDriver());
