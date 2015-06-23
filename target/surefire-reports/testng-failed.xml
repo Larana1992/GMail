@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [GMailSuite]">
+  <test name="gmail(failed)">
+    <classes>
+      <class name="tests.TestsForGMail">
+        <methods>
+          <include name="setupBeforeMethod"/>
+          <include name="goBack"/>
+          <include name="checkThatTheLetterCanBeSendWithFile"/>
+          <include name="checkThatTheThemeSettingUp"/>
+          <include name="setUpConfiguration"/>
+          <include name="checkThatTheLetterSentToTheSpamFolder"/>
+        </methods>
+      </class> <!-- tests.TestsForGMail -->
+    </classes>
+  </test> <!-- gmail(failed) -->
+</suite> <!-- Failed suite [GMailSuite] -->

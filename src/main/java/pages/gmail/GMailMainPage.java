@@ -90,9 +90,9 @@ public class GMailMainPage extends CorePage implements MainPage {
 	@Override
 	public GMailMainPage navigateToSpamFolder() {
 		getLnkMore().click();
-		waitForElementIsVisible(getBtnSpamFolder().getWrappedElement(),
+		waitForElementIsVisible(getLnkSpamFolder().getWrappedElement(),
 				getDriver());
-		getBtnSpamFolder().click();
+		getLnkSpamFolder().click();
 		return getGMailMainPage();
 	}
 

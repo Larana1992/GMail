@@ -2,11 +2,10 @@ package core.helpers.pages;
 
 import static core.helpers.generalhelpers.WaiterHelpers.*;
 import static org.openqa.selenium.By.xpath;
-
+import static core.helpers.generalhelpers.VerifyHelpers.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import static core.Config.*;
 import static pages.gmail.elements.GMailMainPageElements.*;
 import pages.base.CorePage;
@@ -39,10 +38,19 @@ public class GMailMainPageHelper extends CorePage {
 	}
 
 	public void deleteAllLetters() {
-		if(getLstBtnAllLetters().size()>0)
-		{
+		if (isElementPresent(By.xpath(ALL_LETTERS_LIST),getDriver())){ 
 			getChbSelectAllLetter().select();
+			getBtnDeleteAllLetter().click();
 		}
+	}
+
+	public void selectFolderAndDeleteLetter() {
+		MyPages.getGMailMainPage().navigateToSpamFolder();
+		deleteAllLetters();
+		getLnkStarred().click();
+		deleteAllLetters();
+		getLnkInbox().click();
+		deleteAllLetters();
 	}
 
 	public void logOut() {

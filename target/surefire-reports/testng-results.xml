@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="GMailSuite" duration-ms="314471" started-at="2015-06-23T08:08:39Z" finished-at="2015-06-23T08:13:53Z">
+    <groups>
+    </groups>
+    <test name="gmail" duration-ms="314471" started-at="2015-06-23T08:08:39Z" finished-at="2015-06-23T08:13:53Z">
+      <class name="tests.TestsForGMail">
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="setupBeforeMethod" is-config="true" duration-ms="1653" started-at="2015-06-23T11:08:39Z" finished-at="2015-06-23T11:08:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="setUpConfiguration()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="setUpConfiguration" is-config="true" duration-ms="170" started-at="2015-06-23T11:08:40Z" finished-at="2015-06-23T11:08:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfiguration -->
+        <test-method status="PASS" signature="checkThatTheLetterAddingToStarredFolderAfterMovingIt()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="checkThatTheLetterAddingToStarredFolderAfterMovingIt" duration-ms="35233" started-at="2015-06-23T11:08:40Z" description="Task #2" finished-at="2015-06-23T11:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThatTheLetterAddingToStarredFolderAfterMovingIt -->
+        <test-method status="PASS" signature="goBack()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="goBack" is-config="true" duration-ms="34544" started-at="2015-06-23T11:09:16Z" finished-at="2015-06-23T11:09:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method status="PASS" signature="setUpConfiguration()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="setUpConfiguration" is-config="true" duration-ms="46" started-at="2015-06-23T11:09:50Z" finished-at="2015-06-23T11:09:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfiguration -->
+        <test-method status="PASS" signature="checkThatTheLetterCanBeSendWithFile()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="checkThatTheLetterCanBeSendWithFile" duration-ms="48639" started-at="2015-06-23T11:09:50Z" description="Task #3" finished-at="2015-06-23T11:10:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThatTheLetterCanBeSendWithFile -->
+        <test-method status="PASS" signature="goBack()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="goBack" is-config="true" duration-ms="36013" started-at="2015-06-23T11:10:39Z" finished-at="2015-06-23T11:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method status="PASS" signature="setUpConfiguration()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="setUpConfiguration" is-config="true" duration-ms="14" started-at="2015-06-23T11:11:15Z" finished-at="2015-06-23T11:11:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfiguration -->
+        <test-method status="PASS" signature="checkThatTheLetterSentToTheSpamFolder()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="checkThatTheLetterSentToTheSpamFolder" duration-ms="69386" started-at="2015-06-23T11:11:15Z" description="Task #1" finished-at="2015-06-23T11:12:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThatTheLetterSentToTheSpamFolder -->
+        <test-method status="PASS" signature="goBack()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="goBack" is-config="true" duration-ms="35965" started-at="2015-06-23T11:12:24Z" finished-at="2015-06-23T11:13:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method status="PASS" signature="setUpConfiguration()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="setUpConfiguration" is-config="true" duration-ms="16" started-at="2015-06-23T11:13:00Z" finished-at="2015-06-23T11:13:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfiguration -->
+        <test-method status="PASS" signature="checkThatTheThemeSettingUp()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="checkThatTheThemeSettingUp" duration-ms="17179" started-at="2015-06-23T11:13:00Z" description="Task #4" finished-at="2015-06-23T11:13:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThatTheThemeSettingUp -->
+        <test-method status="PASS" signature="goBack()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="goBack" is-config="true" duration-ms="32926" started-at="2015-06-23T11:13:17Z" finished-at="2015-06-23T11:13:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.TestsForGMail@3eb60b56]" name="tearDown" is-config="true" duration-ms="2640" started-at="2015-06-23T11:13:50Z" finished-at="2015-06-23T11:13:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TestsForGMail -->
+    </test> <!-- gmail -->
+  </suite> <!-- GMailSuite -->
+</testng-results>

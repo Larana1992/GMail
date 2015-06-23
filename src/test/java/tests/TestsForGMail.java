@@ -84,6 +84,12 @@ public class TestsForGMail extends CorePage {
 	@AfterMethod
 	public void goBack() {
 		mainPage.logOut();
+		loginPage.logIn(secondUser);
+		mainPageHelper.selectFolderAndDeleteLetter();
+		mainPage.logOut();
+		loginPage.logIn(firstUser);
+		mainPageHelper.selectFolderAndDeleteLetter();
+		mainPage.logOut();
 	}
 
 	@AfterClass

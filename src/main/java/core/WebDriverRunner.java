@@ -19,7 +19,6 @@ class WebDriverRunner {
 	public static final String BROWSER_FIREFOX = "Firefox";
 	public static final String BROWSER_CHROME = "Chrome";
 	public static final String BROWSER_IE = "InternetExplorer";
-	public static final String BROWSER_OPERA = "Opera";
 
 	private WebDriverRunner() {
 
@@ -87,9 +86,6 @@ class WebDriverRunner {
 			caps.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, "");
 			caps.setCapability("ignoreZoomSetting", true);
 			break;
-		case BROWSER_OPERA:
-			caps = DesiredCapabilities.opera();
-			break;
 		default:
 			String errorMessage = String.format(
 					"browserType: <%s> was not recognized as supported browser."
@@ -112,10 +108,6 @@ class WebDriverRunner {
 			System.setProperty("webdriver.ie.driver",
 					"libdrivers/IEDriverServer.exe");
 			return new InternetExplorerDriver();
-		case BROWSER_OPERA:
-			System.setProperty("webdriver.opera.driver",
-					"libdrivers/operadriver.exe");
-			return new OperaDriver();
 		default:
 			String errorMessage = String.format(
 					"browserType: <%s> was not recognized as supported browser."
